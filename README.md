@@ -12,6 +12,7 @@ Building deterministic software systems, enterprise verification harnesses, and 
 
 | Repository | Stack | Focus |
 | :--- | :--- | :--- |
+| [**`mcp-moe-hybrid-sdk`**](https://github.com/nahianakhtar/mcp-moe-hybrid-sdk) | Python 3.12, MCP `2025-11-25`, SQLite WAL `FTS5`, Docker | **Public Flagship AI SDK**: Sparse Top-2 MoE SLA Router (`0.012 ms` $p_{95}$) + BM25/Vector RRF Hybrid RAG (`1.00` Recall@1, `0.466 ms` $p_{95}$) + Secret Redaction Guard |
 | `ssi-order-pipeline-demo` | Python, SQLite, pytest | Schema-enforced synthetic order ingestion and deterministic SQL reporting |
 | `ssi-local-ops-rust` | Rust, Cargo | Memory-safe local job-run telemetry and schedule invariant checker |
 | `ssi-pulse-analytics-demo` | Python, FastAPI, React | Full-stack synthetic analytics service with automated API validation |
