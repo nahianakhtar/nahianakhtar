@@ -1,4 +1,4 @@
-# Nahian Akhtar
+# NAHIAN AKHTAR
 Systems, Polyglot AI SDK & Verification Engineer
 
 Engineering deterministic AI protocols, memory-safe Rust/C11 runtimes, hybrid SQLite/Vector retrieval engines, and zero-flake verification pipelines in New York, NY.
