@@ -1,30 +1,32 @@
-# Nahian Akhtar — Custom MCP Servers, CLI Pipelines & Systems Automation
+# Nahian Akhtar
 
-Engineering deterministic AI protocols, guardrailed automation CLIs, memory-safe Rust/C11 runtimes, and hybrid SQLite/Vector retrieval engines in New York, NY.
+**Systems & Protocol Engineer** | New York, NY | [Portfolio & Interactive Lab](https://nahianakhtar.github.io/)
 
-- **Live Editorial Studio & Interactive Lab**: [nahianakhtar.github.io](https://nahianakhtar.github.io) *(Light-mode `#FAF9F6` showcase + live WASM/MCP protocol lab)*
-- **LinkedIn**: [nahian-akhtar-b42086443](https://www.linkedin.com/in/nahian-akhtar-b42086443)
-- **GitHub**: [@nahianakhtar](https://github.com/nahianakhtar)
-- **Core Stack**: `Python 3.12` · `TypeScript / Node.js 22` · `MCP (stdio & Streamable HTTP)` · `SQLite WAL FTS5` · `Rust 2021` · `ISO C11 FFI` · `Docker & GitHub Actions CI`
+I build Model Context Protocol (MCP) servers, CLI reconciliation pipelines, webhook automation bridges, and low-level Rust/C11 runtimes verified with offline test suites before delivery.
 
----
+## Open-Source Client Proof Repositories (MIT License)
 
-## Featured Automation & Systems Repositories (MIT Licensed · CI Verified)
-
-| Repository | Stack | Verified Capabilities & Benchmarks | CI Gate |
+| Repository | Stack | Core Scope | Offline Verification |
 | :--- | :--- | :--- | :--- |
-| [**`mcp-moe-hybrid-sdk`**](https://github.com/nahianakhtar/mcp-moe-hybrid-sdk) | Python 3.10+, SQLite WAL `FTS5`, MCP `2025-11-25`, OAuth 2.1, Docker | **`42` offline tests** · **`1.00` Recall@1** · Sparse Top-2 MoE routing · `Mcp-Session-Id` SSE replay · RFC 9728 / PKCE S256 | ![CI](https://github.com/nahianakhtar/mcp-moe-hybrid-sdk/actions/workflows/ci.yml/badge.svg) |
-| [**`mcp-automation-demo`**](https://github.com/nahianakhtar/mcp-automation-demo) | Python 3.12, `uv`, official `mcp==2.3.0` stdio + `recon` CLI | **`77` offline tests** · `Decimal` (`ROUND_HALF_EVEN`) CSV/SQLite reconciliation · `mode=ro` + write-root confinement · JSONL audit log | ![CI](https://github.com/nahianakhtar/mcp-automation-demo/actions/workflows/ci.yml/badge.svg) |
-| [**`api-glue-mcp`**](https://github.com/nahianakhtar/api-glue-mcp) | TypeScript `7.0.2`, Node 22 `node:sqlite`, `@modelcontextprotocol/server@2.4.0` | **`8` offline tests** · HMAC-SHA256 replay guard · SSRF allowlist · SQLite WAL idempotency · `Retry-After` backoff + DLQ replay | ![CI](https://github.com/nahianakhtar/api-glue-mcp/actions/workflows/ci.yml/badge.svg) |
-| [**`polyglot-agent-runtime-rs`**](https://github.com/nahianakhtar/polyglot-agent-runtime-rs) | Rust 2021 + C11 FFI (`-O3 -Wall -Wextra -Werror`), `wasm32` | **`2.93M+ ops/sec`** 64B CRC32C ring vault · capability-fenced DAG scheduler · `O(1)` Jain-Chlamtac `P²` quantiles | ![CI](https://github.com/nahianakhtar/polyglot-agent-runtime-rs/actions/workflows/ci.yml/badge.svg) |
-| [**`fullstack-rag-eval-studio`**](https://github.com/nahianakhtar/fullstack-rag-eval-studio) | TypeScript `.d.ts`, Zero-Dep Node.js 22 ESM, HTTP + SSE, Docker | **`100%` Faithfulness** · **`97.5%` AP@2** · OAuth 2.1 RFC 9728 + `Mcp-Session-Id` SSE replay (`35` suites) | ![CI](https://github.com/nahianakhtar/fullstack-rag-eval-studio/actions/workflows/ci.yml/badge.svg) |
-| [**`zero-to-code-systems-lab`**](https://github.com/nahianakhtar/zero-to-code-systems-lab) | Zero-Dep ES5/HTML5/SVG, Native C# x64 WebView2, Inno Setup | **100% Air-Gapped (`0` Net Calls)** · `100` CS Concepts (`300+` variants) · [Live Lab](https://nahianakhtar.github.io/zero-to-code-systems-lab/) & [Win x64 Release](https://github.com/nahianakhtar/zero-to-code-systems-lab/releases/latest) | ![CI](https://github.com/nahianakhtar/zero-to-code-systems-lab/actions/workflows/ci.yml/badge.svg) |
-| [**`nahianakhtar.github.io`**](https://github.com/nahianakhtar/nahianakhtar.github.io) | Editorial Light Studio (`#FAF9F6` / `#141413`), ES2022 + Rust `wasm32` | **10 Interactive MCP/WASM Lab Modes** · `12`-Dimension Competency Matrix · `0` External Runtime Deps | ![CI](https://github.com/nahianakhtar/nahianakhtar.github.io/actions/workflows/ci.yml/badge.svg) |
+| [mcp-moe-hybrid-sdk](https://github.com/nahianakhtar/mcp-moe-hybrid-sdk) | Python 3.10+, SQLite FTS5, OAuth 2.1 | MCP 2025-11-25 Streamable HTTP server, hybrid BM25 + cosine search, token rate limits, PII scrubbing | `42` offline `pytest` tests, `1.0000` Recall@1 (`v1.9.0`, CI green) |
+| [mcp-automation-demo](https://github.com/nahianakhtar/mcp-automation-demo) | Python 3.12, `uv`, `mcp==2.3.0`, SQLite | CSV and SQLite invoice reconciliation CLI (`Decimal` math, read-only database open, write gates, JSONL audit) | `77` offline `pytest` tests + stdio smoke checks (CI green) |
+| [api-glue-mcp](https://github.com/nahianakhtar/api-glue-mcp) | TypeScript, Node 22 `node:sqlite`, MCP v2 | Idempotent webhook and Zapier replacement engine (HMAC replay check, HTTPS host allowlists, dead-letter replay) | `8` offline `node --test` suites + `tsc` `0` errors (CI green) |
 
----
+## Systems Runtimes & Verification Lab
 
-## Engineering Principles
+| Repository | Stack | Measured Results |
+| :--- | :--- | :--- |
+| [polyglot-agent-runtime-rs](https://github.com/nahianakhtar/polyglot-agent-runtime-rs) | Rust 2021, ISO C11 FFI (`-Werror`) | `2.94M ops/s` CRC32C ring buffer (`0.3819 µs` p95), `38.01M obs/s` Jain-Chlamtac `P²` quantiles |
+| [fullstack-rag-eval-studio](https://github.com/nahianakhtar/fullstack-rag-eval-studio) | TypeScript, Node 22 HTTP/SSE | `100%` faithfulness and Recall@2, `7,623.5 cases/s` offline evaluation gateway |
+| [zero-to-code-systems-lab](https://github.com/nahianakhtar/zero-to-code-systems-lab) | ES5/SVG Web + C# x64 WebView2 | `100` CS and systems concepts offline with hardware CPU/ALU simulators (`407 KB` portable zip) |
 
-- **Deterministic Pre-Action Guardrails**: Enforce read-only defaults, SSRF/path confinement, `Decimal` precision, and append-only JSONL audit logs in code—never via prompt-only instructions.
-- **Offline Verification First**: Every Python, TypeScript, and Rust repository ships socket-guarded or mocked offline test suites and reproducible builds verified in GitHub Actions CI.
-- **Verified Credentials**: B.S. in Computer Science & Engineering · Phitron *CS Fundamentals (C/C++)* · Simplilearn *Prompt Engineering* (`11042519`).
+## Live In-Browser Protocol Workbench
+
+Test live Sparse Top-2 MoE routing, OAuth 2.1 RFC 9728 metadata, PKCE S256 token checks, and compiled `wasm32` telemetry tables directly in the browser with zero external API keys:
+
+[Open Live Simulator at nahianakhtar.github.io](https://nahianakhtar.github.io/#simulator)
+
+## Core Tooling
+- **Protocols & Automation**: MCP (`stdio` and Streamable HTTP), JSON-RPC 2.0, OAuth 2.1, HMAC webhooks, dead-letter replay queues
+- **Languages & Data**: Python 3.12 (`uv`, `pytest`, `ruff`), TypeScript, Node.js 22 (`node:sqlite`), Rust, ISO C11, SQLite WAL/FTS5
+- **Delivery Standards**: Read-only defaults, explicit write gating, exact `Decimal` math for money, JSONL audit logs, Docker, GitHub Actions CI
