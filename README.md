@@ -11,6 +11,7 @@ I build Model Context Protocol (MCP) servers, CLI reconciliation pipelines, webh
 | [mcp-moe-hybrid-sdk](https://github.com/nahianakhtar/mcp-moe-hybrid-sdk) | Python 3.10+, SQLite FTS5, OAuth 2.1 | MCP 2025-11-25 Streamable HTTP server, hybrid BM25 + cosine search, token rate limits, PII scrubbing | `42` offline `pytest` tests, `1.0000` Recall@1 (`v1.9.0`, CI green) |
 | [mcp-automation-demo](https://github.com/nahianakhtar/mcp-automation-demo) | Python 3.12, `uv`, `mcp==2.3.0`, SQLite | CSV and SQLite invoice reconciliation CLI (`Decimal` math, read-only database open, write gates, JSONL audit) | `77` offline `pytest` tests + stdio smoke checks (CI green) |
 | [api-glue-mcp](https://github.com/nahianakhtar/api-glue-mcp) | TypeScript, Node 22 `node:sqlite`, MCP v2 | Idempotent webhook and Zapier replacement engine (HMAC replay check, HTTPS host allowlists, dead-letter replay) | `8` offline `node --test` suites + `tsc` `0` errors (CI green) |
+| [`invoice-audit-mcp-saas`](https://github.com/nahianakhtar/invoice-audit-mcp-saas) | Python 3.12, MCP `2025-11-25`, SQLite WAL | Metered 128-bit micro-dollar invoice REST API & Streamable HTTP MCP server (`HTTP 402`, Stripe HMAC, Merkle proofs, GitHub Action) | Offline `pytest` + `ruff` + `v1.0.0` release (CI green) |
 
 ## Systems Runtimes & Verification Lab
 
