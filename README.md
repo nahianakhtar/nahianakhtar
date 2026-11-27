@@ -12,6 +12,7 @@ I build Model Context Protocol (MCP) servers, CLI reconciliation pipelines, webh
 | [mcp-automation-demo](https://github.com/nahianakhtar/mcp-automation-demo) | Python 3.12, `uv`, `mcp==2.3.0`, SQLite | CSV and SQLite invoice reconciliation CLI (`Decimal` math, read-only database open, write gates, JSONL audit) | `77` offline `pytest` tests + stdio smoke checks (CI green) |
 | [api-glue-mcp](https://github.com/nahianakhtar/api-glue-mcp) | TypeScript, Node 22 `node:sqlite`, MCP v2 | Idempotent webhook and Zapier replacement engine (HMAC replay check, HTTPS host allowlists, dead-letter replay) | `8` offline `node --test` suites + `tsc` `0` errors (CI green) |
 | [`invoice-audit-mcp-saas`](https://github.com/nahianakhtar/invoice-audit-mcp-saas) | Python 3.12, MCP `2025-11-25`, SQLite WAL | Metered 128-bit micro-dollar invoice REST API & Streamable HTTP MCP server (`HTTP 402`, Stripe HMAC, Merkle proofs, GitHub Action) | Offline `pytest` + `ruff` + `v1.0.0` release (CI green) |
+| [`mcp-billing-firewall`](https://github.com/nahianakhtar/mcp-billing-firewall) | Python 3.12, MCP `2025-11-25`, SQLite WAL | Zero-dependency MCP security firewall, prompt-injection & SSRF blocker, atomic micro-credit `HTTP 402` / `x402` proxy, Polar/Stripe webhooks & SHA-256 hash chain | `mypy --strict`, `ruff`, 12-thread race `pytest` + `v1.0.0` (CI green) |
 
 ## Systems Runtimes & Verification Lab
 
@@ -26,7 +27,7 @@ I build Model Context Protocol (MCP) servers, CLI reconciliation pipelines, webh
 Test live Sparse Top-2 MoE routing, OAuth 2.1 RFC 9728 metadata, PKCE S256 token checks, 128-bit micro-dollar Merkle proofs, and compiled `wasm32` telemetry tables directly in the browser with zero external API keys:
 
 - **Portfolio & Protocol Studio**: [nahianakhtar.github.io](https://nahianakhtar.github.io/)
-- **5 Interactive Engineering Workbenches**: [MoE + Hybrid RRF](https://nahianakhtar.github.io/demos/moe-rag/) | [128-Bit Ledger Merkle](https://nahianakhtar.github.io/demos/ledger-audit/) | [64B Rust Ring + DAG](https://nahianakhtar.github.io/demos/rust-ring-dag/) | [120-Case Guardrail Eval](https://nahianakhtar.github.io/demos/guardrail-automaton/) | [Per-Monitor V2 UIA DPI](https://nahianakhtar.github.io/demos/uia-metrology/)
+- **6 Interactive Engineering Workbenches**: [MoE + Hybrid RRF](https://nahianakhtar.github.io/demos/moe-rag/) | [128-Bit Ledger Merkle](https://nahianakhtar.github.io/demos/ledger-audit/) | [64B Rust Ring + DAG](https://nahianakhtar.github.io/demos/rust-ring-dag/) | [120-Case Guardrail Eval](https://nahianakhtar.github.io/demos/guardrail-automaton/) | [Per-Monitor V2 UIA DPI](https://nahianakhtar.github.io/demos/uia-metrology/) | [MCP Billing Firewall](https://nahianakhtar.github.io/demos/mcp-firewall/)
 - **4 Free Local Browser Calculators**: [GPU VRAM / KV Cost](https://nahianakhtar.github.io/tools/rag-vram-cost/) | [Freelance Net Tax & ACH](https://nahianakhtar.github.io/tools/freelance-net-tax/) | [Benford Invoice Auditor](https://nahianakhtar.github.io/tools/benford-invoice-audit/) | [Little's Law p95 Queue](https://nahianakhtar.github.io/tools/littles-law-throughput/)
 - **4 Engineering Notes**: [Read all architecture briefs](https://nahianakhtar.github.io/articles/)
 - **Support Open Source**: [GitHub Sponsors](https://github.com/sponsors/nahianakhtar)
