@@ -19,6 +19,7 @@ I build Model Context Protocol (MCP) servers, CLI reconciliation pipelines, webh
 
 | Repository | Stack | Measured Results |
 | :--- | :--- | :--- |
+| [`otlp-llm-cost-profiler-rs`](https://github.com/nahianakhtar/otlp-llm-cost-profiler-rs) | Rust 2021, OpenTelemetry OTLP/JSON | Exact picodollar LLM cost, `p50`/`p95`/`p99` tail latency, prompt-cache savings & CI budget gate (`v0.1.1`, CI green) |
 | [polyglot-agent-runtime-rs](https://github.com/nahianakhtar/polyglot-agent-runtime-rs) | Rust 2021, ISO C11 FFI (`-Werror`) | `2.94M ops/s` CRC32C ring buffer (`0.3819 µs` p95), `38.01M obs/s` Jain-Chlamtac `P²` quantiles |
 | [fullstack-rag-eval-studio](https://github.com/nahianakhtar/fullstack-rag-eval-studio) | TypeScript, Node 22 HTTP/SSE | `100%` faithfulness and Recall@2, `7,623.5 cases/s` offline evaluation gateway |
 | [zero-to-code-systems-lab](https://github.com/nahianakhtar/zero-to-code-systems-lab) | ES5/SVG Web + C# x64 WebView2 | `100` CS and systems concepts offline with hardware CPU/ALU simulators (`407 KB` portable zip) |
